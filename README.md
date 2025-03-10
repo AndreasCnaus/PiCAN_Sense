@@ -1,7 +1,13 @@
     
 # PiCAN_Sense Project
 
-The **PiCAN_Sense** project is a system built on a Raspberry Pi 4 running the Raspbian GNU/Linux 11 operating system. Its primary function is to read environmental values, such as temperature, pressure, and humidity, from a BME280 sensor via a CAN (Controller Area Network) bus. The system uses a self-written CAN driver for the MCP2515 chip, making these readings available to user-space applications for further processing and analysis.
+The **PiCAN_Sense** is a system designed to monitor environmental data using two main components:
+
+An **STM32WB** microcontroller and a **Raspberry Pi**, which are connected via the CAN bus. The microcontroller periodically reads the environmental data ​​from the BME280 sensor and puts them on the CAN bus. The Raspberry Pi acts as a central control unit. Using a custom developed device driver for the MCP2515 CAN-chip, it receives the environmental data from the microcontroller via the CAN bus and makes them available to the user-space application.
+
+This two-part architecture is reflected in the repository structure, consisting of the following subrepositories:
+ - **PiCAN**: Contains the Raspberry Pi's MCP2515 CAN-chip driver and user-space application for test and verification.
+ - **STM32WB_CAN_Sense**: Contains the firmware and configurations for the STM32WB microcontroller, along with the necessary custom drivers for the MCP2515 CAN-chip and the BME280 sensor.
 
 ## System Overview:
            +----------------------------------+
@@ -68,9 +74,9 @@ The PiCAN_Sense system architecture is organized as follows:
 
 ## Project/Feature status:
 
-![Test Setup](https://github.com/AndreasCnaus/PiCAN_Sense/blob/master/docs/PiCAN_Sense_test_setup.jpg)
+![Test Setup](https://github.com/AndreasCnaus/PiCAN_Sense/blob/main/docs/PiCAN_Sense_test_setup.jpg)
 
--  MCP2515 Driver for STM23WB Microcontroller: **still needs to be implemented**.
+-  MCP2515 Driver for STM23WB Microcontroller: **Work in progress**.
 - Documentation of implementation and usage: **still needs to be implemented**.
   
 ## License
