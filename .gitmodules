@@ -1,0 +1,6 @@
+[submodule "PiCAN"]
+	path = PiCAN
+	url = https://github.com/AndreasCnaus/PiCAN
+[submodule "STM32WB_CAN_Sense"]
+	path = STM32WB_CAN_Sense
+	url = https://github.com/AndreasCnaus/STM32WB_CAN_Sense
