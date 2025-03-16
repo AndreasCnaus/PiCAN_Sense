@@ -67,7 +67,7 @@ The PiCAN_Sense system architecture is organized as follows:
         - Acts as an intermediary between the RF Breakout Board and the CAN-Bus network.
         -  Transmits data between CAN-Bus and RF Breakout Board via SPI interface.
 
-3. **RF Breakout Board** (see laso: https://github.com/AndreasCnaus/BLE_ESB/tree/main/hardware):
+3. **RF Breakout Board** (see laso: [RF Breakout Board](https://github.com/AndreasCnaus/BLE_ESB/tree/main/hardware)):
     - **Key Components**:
         - **STM32WB Microcontroller**: Reads BME280 Sensor data via the I2C interface and puts them on the CAN Bus via the CAN-Shield.
         - **BME280 Sensor**: An environmental sensor connected via the I2C bus, measuring temperature, humidity, and pressure.
@@ -81,7 +81,7 @@ The PiCAN_Sense system architecture is organized as follows:
 
 ## License
 
-This project is licensed under the MIT License. You can find the full license text in the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. You can find the full license text in the [LICENSE](https://github.com/AndreasCnaus/PiCAN_Sense/blob/main/docs/LICENSE) file.
 
 ### Third-Party Software
 
