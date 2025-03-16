@@ -78,6 +78,7 @@ The PiCAN_Sense system architecture is organized as follows:
 
 -  MCP2515 Driver for STM23WB Microcontroller: **Work in progress**.
 - Documentation of implementation and usage: **still needs to be implemented**.
-  
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+
+
