@@ -72,12 +72,10 @@ The PiCAN_Sense system architecture is organized as follows:
         - **STM32WB Microcontroller**: Reads BME280 Sensor data via the I2C interface and puts them on the CAN Bus via the CAN-Shield.
         - **BME280 Sensor**: An environmental sensor connected via the I2C bus, measuring temperature, humidity, and pressure.
 
-## Project/Feature status:
+## Hardware Setup:
 
-![Test Setup](https://github.com/AndreasCnaus/PiCAN_Sense/blob/main/docs/PiCAN_Sense_test_setup.jpg)
+![Test Setup](/docs/PiCAN_Sense_Hw_Setup.jpg)
 
--  MCP2515 Driver for STM23WB Microcontroller: **Work in progress**.
-- Documentation of implementation and usage: **still needs to be implemented**.
 
 ## License
 
