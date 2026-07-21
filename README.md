@@ -6,7 +6,7 @@ The **PiCAN_Sense** is a system designed to monitor environmental data using two
 An **STM32WB** microcontroller and a **Raspberry Pi**, which are connected via the CAN bus. The microcontroller periodically reads the environmental data ​​from the BME280 sensor and puts them on the CAN bus. The Raspberry Pi acts as a central control unit. Using a custom developed device driver for the MCP2515 CAN-chip, it receives the environmental data from the microcontroller via the CAN bus and makes them available to the user-space application.
 
 This two-part architecture is reflected in the repository structure, consisting of the following subrepositories:
- - **PiCAN**: Contains the Raspberry Pi's MCP2515 CAN-chip driver and user-space application for test and verification.
+ - **PiCAN**: Contains the Raspberry Pi's MCP2515 CAN-chip **custom driver** and user-space application for test and verification.
  - **STM32WB_CAN_Sense**: Contains the firmware and configurations for the STM32WB microcontroller, along with the necessary custom drivers for the MCP2515 CAN-chip and the BME280 sensor.
 
 ## System Overview:
